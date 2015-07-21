@@ -1,0 +1,1 @@
+NR>1{x=$1%5;y=$1%7;print !y&&!x?"fizzbuzz":!y?"buzz":!x?"fizz":$1}
