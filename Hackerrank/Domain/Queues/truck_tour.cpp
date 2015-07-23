@@ -12,4 +12,4 @@ int main(){
 		p=p+patrol-distance;
 	}
 	printf("%d\n",location);
-}
+}	
