@@ -1,0 +1,29 @@
+/*
+	link	:-	https://www.hackerrank.com/contests/countercode/challenges/imba
+	problem	:-	Imba
+
+*/
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+    	String string = in.nextLine();
+    	int test = Integer.parseInt(string);
+    	for (int i = 0; i < test; i++) {
+			int n = Integer.parseInt(in.nextLine());
+			int[] arr = new int[n+1];
+			int counter = 0;
+			for (int j = n; j > 0; j--) 
+			{
+				arr[j--] = n - counter++;
+				if(j>0)
+					arr[j] = n+1 - arr[j+1];
+			}
+			for (int j = 1; j < arr.length; j++) {
+				System.out.print(arr[j]+" ");
+			}
+            System.out.println();
+		}
+    }
+}
