@@ -1,0 +1,57 @@
+Problem : Robot's move
+
+A robot is programmed to move forward F meters and backwards again, say B meters, in a straight line. The Robot covers 1 meter in T units of time. On Robot's path there is an obstacle after distance D from initial position in forward direction. This forward and backward movement is performed repeatedly by the Robot. 
+ Your task is to calculate amount of time taken before the Robot hits the obstacle. 
+
+
+
+
+Input Format:
+ First line contains total number of test cases, denoted by N 
+ Next N lines, contain a tuple containing 4 values delimited by space 
+F B T D, where 
+1.F denotes forward displacement in meters
+2.B denotes backward displacement in meters
+3.T denotes time taken to cover 1 meter
+4.D denotes distance from Robot's starting position and the obstacle in forward direction
+
+
+
+Output Format:
+ For each test case print time taken by the Robot to hit the obstacle 
+
+
+Constraints:
+
+First move will always in forward direction
+
+1 <= N <= 100
+
+backward displacement < forward displacement i.e. (B < F)
+
+forward displacement (F) > 0
+
+backward displacement (B) > 0
+
+time (T) > 0 
+
+distance (D) > 0
+
+All input values must be positive integers only
+
+
+
+Sample Input and Output
+
+
+Input
+1 
+2
+5 4 8 10
+8 2 3 15
+
+
+
+Output
+400
+69

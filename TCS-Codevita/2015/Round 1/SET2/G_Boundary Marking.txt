@@ -1,0 +1,54 @@
+Problem : Boundary Marking
+
+Amerigo was discovered by four explorers - Alex, Bob, Chris and Dave. Amerigo had vast tracts of land and was also endowed with Oil fields and Gold mines. Since the land was habitable all 4 thought of settling down in Amerigo and start a new life. Amicable as they were, they planned to distribute the new found resources amongst themselves. 
+ Amerigo is square-shaped. A Gold Mine is twice as rich as compared to an Oil Field. 
+ Your task is help Alex, Bob, Chris and Dave do an amicable distribution of Oil fields and Gold mines such that all become almost equally rich. Amerigo must be divided in 4 rectangular areas such that the value of all 4 areas is as close as possible. Value of an area is given by addition of values of Oil fields and Gold mines in that area. One such division is depicted below. 
+
+
+
+Input Format: 
+First line contains T, number of test cases. 
+ Each test case consists of: - 
+1.Grid dimensions : - N 
+2.The Grid: - Next N lines each comprising of 3 characters {'.', '#', "@"} where 
+@ - represents Gold mine 
+# - represents Oil field 
+. - normal land
+
+Output Format: 
+For each test case print the difference between the maximum and minimum value of four rectangles. 
+
+
+Constraints:
+
+1 <= T <= 10
+
+1 <= N <= 1000
+
+Sample Input and Output
+
+
+SNo.
+Input
+Output
+1 
+1
+4
+@ # # .
+# # # .
+# . . .
+# . . #
+
+1
+
+
+
+Explanation: 
+         
+          Fig 3. Sample Input Amerigo                     Fig 4. Sample Boundary Marked Amerigo 
+ Value of Alex's area = '#' x 0 + '@' x 1 = 2 units 
+ Value of Bob's area = '#' x 2 + '@' x 0 = 2 units 
+ Value of Chris's area = '#' x 3 + '@' x 0 = 3 units 
+ Value of Dave's area = '#' x 3 + ''' x 0 = 3 units 
+ Hence the answer = Max value - Min value = 3 - 2 = 1 
+

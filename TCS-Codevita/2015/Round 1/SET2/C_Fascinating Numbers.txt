@@ -1,0 +1,59 @@
+Problem : Fascinating Numbers
+
+Some numbers of 3 digits or more exhibit a very interesting property. The property is such that, when the number is multiplied by 2 and 3, and both these products are concatenated with the original number, all digits from 1 to 9 are present exactly once, regardless of the number of zeroes. 
+ Let's understand the concept of Fascinating Number through the following example. 
+ Consider the number 192, 
+ 192 x 1 =192
+192 x 2 = 384
+192 x 3 = 576 
+ Concatenating the results: 192384576 
+ It could be observed that '192384576' consists of all digits from 1 to 9 exactly once. Hence, it could be concluded that 192 is a Fascinating Number. 
+ Your task is to generate all Fascinating Numbers in a given range. Input specification section describes how to accept inputs. The following paragraph highlights one important constraint on producing the output. 
+ All multiples of 10 of any Fascinating Number are also Fascinating Numbers. In such cases only the smallest Fascinating Number within the range should be printed. Any multiples of 10s in the range, if present, should be discarded. 
+ For example, if range is (101, 20000) then one of the set of Fascinating Numbers in the range are 192, 1920 and 19200. Note that these numbers are multiples of 10 relative to each other. In this case only 192 should be printed and 1920 and 19200 must be discarded. 
+
+
+Input Format: 
+First line contains lower bound of the range 
+Second line contains upper bound of the range 
+
+
+Output Format: 
+ Print all fascinating numbers in the given range inclusive of both lower and upper bounds 
+
+
+Constraints:
+
+L >= 100 
+
+U >= L 
+
+U <= 1,000,000,000
+
+Sample Input and Output
+
+
+SNo.
+Input
+Output
+1 
+110
+300
+
+192
+219
+273
+
+2 
+100
+20000
+
+192
+219
+273
+327
+1902
+2019
+2703
+3027
+19002

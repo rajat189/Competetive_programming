@@ -1,0 +1,108 @@
+Problem : Shopping Assistant
+
+Alicia is on a tourist trip to an island. She went to a shop to buy some mementos for her friends. But the problem is that, on that island number system is as follows, viz. 0,1,2,3,4,5,6,10,11,12,.. 
+ The shop has a catalogue of objects and their prices where the prices are as mentioned in the above number system. She wants to bargain the prices of the articles but she is finding it difficult to do the math at the moment since she is in holiday mood. 
+ Your task is to help her to convert the price to the normal values and once she decides the amount of goods to be purchased, help her to calculate the total cost incurred in normal values to buy the product. 
+
+
+Input Format: 
+ First line contains the name of the file, where the file will contain pricelist of product(s) and purchase details of product(s) separated by whitespace(s) in the format given below: 
+1.Pn price (mandatory)
+2.B Pn quantity (optional)
+where, 
+ B - Buy 
+ P1...n -Products P1 to Pn 
+
+Output Format: 
+
+1.If the input is in first format, the output should be 
+Product Name: Pn
+Price: converted value
+2.If the input is in second format, the output should be 
+Item purchased: Pn
+Quantity: quantity
+3.Print Total cost of purchased product(s)
+
+
+Constraints:
+
+Price > 0
+
+Quantity 0 > n <= 100
+
+Sample Input and Output
+
+
+SNo.
+Input
+Input In file
+Output
+1 
+Input1.txt
+
+P1 46
+B P1 4
+
+Product Name: P1
+Price: 34
+Item purchased: P1
+Quantity: 4
+Total Cost Incurred For Alicia: 136
+
+2 
+Input2.txt
+
+P1 46
+P2 3
+
+Product Name: P1
+Price: 34
+Product Name: P2
+Price: 3
+No Items are Added to Cart
+
+3 
+Input3.txt
+
+P1 97
+
+Invalid Input
+
+4 
+Input4.txt
+
+P1 36
+B P1 4
+B P1 4
+
+Product Name: P1
+Price: 27
+Item purchased: P1
+Quantity: 4
+Item purchased: P1
+Quantity: 4
+Total Cost Incurred For Alicia: 216
+
+5 
+Input5.txt
+
+P1 65
+P2 23
+P3 12
+B P1 12
+B P2 50
+B P3 23
+
+Product Name: P1
+Price: 47
+Product Name: P2
+Price: 17
+Product Name: P3
+Price: 9
+Item purchased: P1
+Quantity: 12
+Item purchased: P2
+Quantity: 50
+Item purchased: P3
+Quantity: 23
+Total Cost Incurred For Alicia: 1621 

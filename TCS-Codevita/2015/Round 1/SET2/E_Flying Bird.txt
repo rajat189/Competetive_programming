@@ -1,0 +1,57 @@
+Problem : Flying Bird
+
+A pole of infinite length is planted vertically on the ground. A stone is placed at a distance of 'd1' meters from the pole towards the right. A bird is sitting on the ground exactly in the middle of the pole and stone. The bird flies away towards the right in such a manner that its distance from the pole and the distance between the bird and the stone at any point of time is always equal. Calculate the distance between the bird and it's starting point after n seconds if the bird is covering 'd2'metres horizontally every second. 
+
+                                              Fig:Flying Bird 
+
+
+Input Format: 
+First line contains the distance between pole and stone, denoted by d1 
+ Second line contains the flying velocity of bird per second, denoted by d2 meters/ sec 
+ Third line contains time since the bird started flying, denoted n 
+
+
+Output Format: 
+Print the distance between the bird's position after n seconds and its initial position in meters 
+
+
+OR 
+ Print "Invalid Input" if any constraints are violated 
+
+
+Constraints:
+
+d1 >0 
+
+d2 > 0
+
+n > 0 
+
+Calculation and printing of output should be upto 11 precision 
+
+Sample Input and Output
+
+
+SNo.
+Input
+Output
+1 
+20
+12
+6
+
+89.79977728257
+
+2 
+25
+0
+5
+
+Invalid Input
+
+3 
+25
+36
+5
+
+203.46989949376 

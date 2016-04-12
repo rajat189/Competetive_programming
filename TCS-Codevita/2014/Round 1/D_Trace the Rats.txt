@@ -1,0 +1,47 @@
+D : Trace the Rats
+
+Given a square maze (A) of dimension N, every entry (Aij) in the maze is either an open cell 'O' or a wall 'X'. A rat can travel to its adjacent locations (left, right, top and bottom), but to reach a cell, it must be open. Given the locations of R rats, can you find out whether all the rats can reach others or not?
+
+Input Format: 
+Input will consist of three parts, viz.
+
+1. Size of the maze (N)
+2. The maze itself (A = N * N)
+3. Number of rats (R)
+4. Location of R rats (Xi, Yi)
+
+Note: 
+(Xi,Yi) will represents the location of the i-th rat.
+Locations are 1-index based.
+
+Output Format: 
+Print "Yes" if the rats can reach each other, else print "No"
+
+Constraints:
+1<=N<=350
+Aij = {'O','X'}
+1<=R<=N*N
+1<=Xi<=N
+1<=Yi<=N
+
+Sample Input and Output
+SNo.	Input	Output
+1	3	Yes
+	O O X
+	O X O
+	O O X
+	4
+	1 1
+	1 2
+	2 1
+	3 2
+
+2	3	No
+	O O X
+	O X O
+	O O X
+	4
+	1 1
+	1 2
+	2 1
+	2 3

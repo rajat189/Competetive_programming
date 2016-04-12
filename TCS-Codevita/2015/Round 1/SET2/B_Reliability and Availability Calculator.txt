@@ -1,0 +1,159 @@
+Problem : Reliability and Availability Calculator
+
+Mr. Dhirubhai is running a small manufacturing unit. Since past few months, he has observed that few of the components of the System are failing continuously and the Repair team has to spend some time to get that component up and running which causes an outage for production. 
+ Dhirubhai wants to know system availability during a particular period to avoid failures so as to take action to increase productivity of the system in near future. Your task is to write a program to calculate the Reliability (MTBF, MTTR) and Availability parameters of the system for given tenure. The parameters are 
+•Mean Time Between Failures (MTBF)
+•Mean Time To Repair (MTTR)
+ Let us understand the terms using an example 
+Example of calculation of terms using data 
+ If Dhirubhai looks outage details for the month of April 2015 then Availability, MTBF, MTTR has been calculated as below 
+
+
+
+Month April, 2015 
+Name of Machine M4 
+Operation availability 
+(min/month) 24,960  
+
+
+
+
+Input Parameter   
+Frequency 11 
+Input Parameter   
+MTBF (min)
+ 2,095 
+
+MTTR (min)
+ 175
+
+AVAILABILITY
+ 92%
+
+Output    
+Output    
+Output    
+
+
+
+No.
+Date
+Time Start
+Time Finish
+Down (min)
+Replacement
+1 01-Apr 10:00 AM 12:00 PM 120  Parts 56 
+2 03-Apr 10:00 AM 12:00 PM 120  Parts 98 
+3 04-Apr 10:00 AM 12:00 PM 120  Parts 33 
+4 05-Apr 10:00 AM 12:00 PM 120  Parts 11 
+5 06-Apr 10:00 AM 12:00 PM 120  Parts 12 
+6 07-Apr 10:00 AM 12:00 PM 120  Parts 98 
+7 15-Apr 6:00 AM 6:00 PM 720  Parts 09 
+8 22-Apr 2:00 PM 6:00 PM 240  Parts 12 
+9 25-Apr 10:30 AM 12:00 PM 90  Parts 98 
+10 25-Apr 3:30 PM 4:30 PM 60  Parts 09 
+11 26-Apr 10:30 AM 12:00 PM 90  Parts 12 
+
+
+
+
+
+
+Total down time (min) 1,920 Input Parameter 
+
+Operation Availability (in minutes for tenure) = # of working days * # of working Hrs in a day * 60 
+Frequency - Total no. of failures during tenure 
+Total Down Time (in minutes) - Total down time during tenure 
+Important Points 
+•MTBF - Mean time Between Failures
+•MTBF calculated using formula MTBF = (Operation Availability - Total Down Time) / Frequency
+•MTTR - Mean Time To Repair 
+MTTR calculated using formula MTTR = Total Down Time / Frequency
+•Availability - Total system Availability during given tenure 
+Availability calculated using formula Availability = (MTBF/(MTBF+MTTR))*100
+•Frequency should always be positive integer value.
+•All values should be positive.
+•MTBF, MTTR in simple terminology 
+Failure--------------------Repair--------------------Failure 
+<------MTTR---------------> 
+<--------------------------MTBF---------------------------->
+
+
+Input Format: 
+ First line contains Operation Availability in minutes for tenure denoted by an integer N 
+ Second line contains frequency of failures for components denoted by an integer F 
+ Third line contains Total down time in minutes during tenure denoted by an integer T 
+
+
+Output Format: 
+ MTBF in minutes 
+ MTTR in minutes 
+ Total system Availability during given tenure 
+
+
+Constraints:
+
+N > 0 ; F >=0 ; T > 0 
+
+T <= N (Total down time should be <= operation availability)
+
+If Frequency is zero then display should as below
+
+Total Down Time: 0
+0
+0
+100%
+
+If no failures are observed during tenure then Frequency and Total down time should be zero
+
+Calculations for MTBF, MTTR and Availability should be done upto 11 precisions and calculated values (MTBF,MTTR and System Availability ) must be printed as nearest integer value
+
+Use % symbol while displaying System Availability in the output
+
+Prompt for input until valid input is given 
+
+Print Invalid Input if non numeric value and / or negative values are given as inputs and prompt user to reenter numeral value for same input.
+
+Sample Input and Output
+
+
+SNo.
+Input
+Output
+1 
+500
+2
+25
+
+238
+12
+95%
+
+2 
+-2490
+630
+-3
+3
+0
+315
+
+Invalid Input
+Invalid Input
+Invalid Input
+105
+105
+50%
+
+
+
+Explanation of Input 2:- 
+1.First input is Operation Availability, which does not follow the constraint; viz. N > 0 so output is Invalid Input. 
+Again prompt for Operation Availability. Now we have entered 630 which is a valid input.
+2.Second input is Frequency of Failures, which does not follow the constraint, viz. F >= 0 so output is Invalid Input. 
+Again prompt for Frequency of Failures. Now we have entered 3 which is a valid input.
+3.Second input is Total down time, which does not follow the constraint, viz. T > 0 so output is Invalid Input. 
+Again prompt for Total down time. Now we have entered 315 which is a valid input.
+4.Now calculations for MTBF, MTTR and System Availability are done upto 11-digit precision and display the output to nearest integer values for all calculated values. So the output is :- 
+ 105
+105
+50%

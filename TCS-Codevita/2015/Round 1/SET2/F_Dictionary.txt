@@ -1,0 +1,49 @@
+
+
+Problem : Dictionary
+
+A big data scientist is developing a certain algorithm to make searching easier. To develop this algorithm, the scientist needs a list of all words whose first three characters match in the given input text. You are chosen to assist the scientist. Write a program that processes text and produces matching words. The output criteria and examples will help you in understand what is expected out of your program. 
+
+
+Input Format: 
+Input contains paragraph or text 
+
+
+Output Format: 
+What to print 
+ Print all those words, whose first 3 characters match. The order of printing should be same as the order in which they occur in the input. The character matching must be case-insensitive and must be printed in lower case. If the word matches only with itself, omit it from printing. When multiple matching words are found, ensure that they are printed only once. 
+Note: - Words may also comprise of numbers. For number case-insensitive matching and lower case printing does not apply. 
+Format of printing 
+ Let's call all words whose first 3 characters match, a set. 
+1.Print one set, per line.
+2.Within a set print all words belonging to that set by obeying the following rules ?Print on words delimited by space
+?Words should be printed in order of their occurrence in the input
+
+
+
+Constraints:
+
+Minimum 3 characters from starting should be matched
+
+Numbers should also be treated as words
+
+Sample Input and Output
+
+
+SNo.
+Input
+Output
+1 
+If your bug report is effective, chances are higher that it will get fixed. So fixing a bug depends on how effectively you report it. Reporting a bug is nothing but a skill and I will tell you how to achieve this skill.
+
+your you 
+report reporting 
+effective effectively 
+fixed fixing
+
+2 
+The book talks about how the employees receive a phone call from God during their work timings at the call center. The characters in this novel include Radhika, Esha, Shyam, Priyanka, Varun, and Military Uncle. These six characters are deeply disturbed by the events taking place in their own lives, and choose to focus on their problems rather than trying to find a way out of them.
+
+the their these them
+
+
